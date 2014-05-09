@@ -1,8 +1,15 @@
 {% if addr %}
-    <p>IP: {{ addr }}</p>
-    <p>OS: {{ os }}</p>
-    <p>BR: {{ browser }}</p>        
+	<p>IP-Address: {{ addr }}</p>
 {% else %}
-    <p>No.</p>
+    <p>No IP-Address data received.</p>
 {% endif %}
-
+{% if os %}
+    <p>Operating System: {{ os }}</p>
+{% else %}
+    <p>No Operating System data received.</p>
+{% endif %}
+{% if browser %}    
+    <p>Browser: {{ browser }}</p>        
+{% else %}
+    <p>No Browser data received.</p>
+{% endif %}

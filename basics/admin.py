@@ -8,4 +8,3 @@ class IPAdmin(admin.ModelAdmin):
     list_display = ('addr', 'os', 'browser')
 
 admin.site.register(IP, IPAdmin)
-

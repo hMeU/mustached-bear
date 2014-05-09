@@ -6,4 +6,3 @@ urlpatterns = patterns('',
     # ex: /basics/
     url(r'^$', views.index, name='index'),
 )
-

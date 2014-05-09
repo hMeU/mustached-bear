@@ -6,6 +6,5 @@ class IP(models.Model):
     browser = models.CharField(max_length=200)        
 
     def __unicode__(self):
-        return self.browser
-        
-    
+    	context = { self.addr, self.os, self. browser }
+        return context
