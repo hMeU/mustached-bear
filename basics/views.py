@@ -21,4 +21,9 @@ def index(request):
     p.save()
 
     return render(request, 'basics/index.html', context)
-    
+
+def lists(request):
+    q = IP.objects.all()
+    context={'query_string':q}
+
+    return render(request, 'basics/lists.html', context)

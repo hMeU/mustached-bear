@@ -1,0 +1,14 @@
+<table>
+    <tr>
+        <th>IP Address</th>
+        <th>Operating System</th>
+        <th>Web Browser</th>
+    </tr>
+    {% for item in query_string %}
+    <tr> 
+        <td>{{ item.addr }}</td>
+        <td>{{ item.os }}</td>
+        <td>{{ item.browser }}</td>
+    </tr>
+    {% endfor %}
+</table>
